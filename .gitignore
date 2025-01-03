@@ -2,3 +2,4 @@ dev/
 .git/
 京bVer/
 main_dev.py
+.gitignore
