@@ -4,12 +4,18 @@ import os
 from datetime import datetime
 import pandas as pd
 
-group_id = input("please enter your qq group id:")
-url = f'https://qun.qq.com/essence/indexPc?gc={group_id}&seq=11451419&random=1919810114'
-
 #获取方法：进入qun.qq.com的网页下打开浏览器console，输入document.cookie
 #不过其实在啥要登陆qq的网页下都能获取到
 usrCookie = ''
+
+if usrCookie == '':
+    print("Please enter your cookie in the script.")
+    exit()
+
+
+
+group_id = input("please enter your qq group id:")
+url = f'https://qun.qq.com/essence/indexPc?gc={group_id}&seq=11451419&random=1919810114'
 
 header = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
