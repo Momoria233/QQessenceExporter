@@ -12,7 +12,7 @@
 
 进入qun.qq.com的网页下打开浏览器console，输入document.cookie
 
-不过其实在啥要登陆qq的网页下都能获取到
+（或者其他需要登陆qq的地方也可以）
 
 ### 根据需求不同请自行修改data_list.append的部分！详细教程请见注释
 
