@@ -1,3 +1,17 @@
+import importlib.util
+import subprocess
+import sys
+
+def install_and_import(package):
+    module = importlib.util.find_spec(package)
+    if module is None:
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+    importlib.import_module(package)
+
+install_and_import('bs4')
+install_and_import('requests')
+install_and_import('pandas')
+
 from bs4 import BeautifulSoup
 import requests
 import os
